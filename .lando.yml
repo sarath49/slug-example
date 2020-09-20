@@ -1,0 +1,6 @@
+name: drupal-test-web
+recipe: pantheon
+config:
+  framework: drupal8
+  site: drupal-test-web
+  id: 696b4c82-9c97-4f2b-a19e-b7b041d2f369
