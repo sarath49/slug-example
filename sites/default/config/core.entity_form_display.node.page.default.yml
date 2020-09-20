@@ -3,11 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_custom_slug
+    - field.field.node.page.field_custom_slug_2
+    - field.field.node.page.field_default_slug
     - node.type.page
   module:
     - path
-    - text
 _core:
   default_config_hash: AD_lefuYmjsKeH3OQApsyP_nLj6ZnGaALznLQSQ0Z_o
 id: node.page.default
@@ -15,22 +16,36 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 31
-    region: content
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-      show_summary: false
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_custom_slug:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_custom_slug_2:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_default_slug:
+    weight: 121
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   path:
     type: path
     weight: 30

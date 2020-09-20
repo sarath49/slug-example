@@ -1,0 +1,10 @@
+{
+    "name": "custom/slugify",
+    "type": "drupal-custom",
+    "description": "Slug field formatter",
+    "keywords": ["Drupal"],
+    "minimum-stability": "dev",
+    "require": {
+      "cocur/slugify": "^3.2"
+    }
+  }

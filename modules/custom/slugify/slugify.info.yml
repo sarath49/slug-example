@@ -1,0 +1,6 @@
+name: Slugify Text field
+type: module
+description: 'Defines slugify field formatter for text field'
+package: Field Formatter
+core: 8.x
+core_version_requirement: ^8 || ^9

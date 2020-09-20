@@ -1,0 +1,21 @@
+uuid: 73361017-2354-4b48-a4fa-9d14fa0a5c4d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_custom_slug_2
+field_name: field_custom_slug_2
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

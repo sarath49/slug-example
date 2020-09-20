@@ -3,10 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.page.body
+    - field.field.node.page.field_custom_slug
+    - field.field.node.page.field_custom_slug_2
+    - field.field.node.page.field_default_slug
     - node.type.page
   module:
-    - text
+    - slugify
     - user
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
@@ -15,14 +17,36 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 100
-    region: content
-    settings: {  }
+  field_custom_slug:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+      seperator: '-'
     third_party_settings: {  }
+    type: slugify_field_formatter
+    region: content
+  field_custom_slug_2:
+    weight: 104
+    label: above
+    settings:
+      seperator: /
+      link_to_entity: 0
+    third_party_settings: {  }
+    type: slugify_field_formatter
+    region: content
+  field_default_slug:
+    weight: 102
+    label: above
+    settings:
+      seperator: ''
+      link_to_entity: 0
+    third_party_settings: {  }
+    type: slugify_field_formatter
+    region: content
   links:
     weight: 101
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

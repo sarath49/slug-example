@@ -1,0 +1,4 @@
+services:
+  slugify.concur:
+    class: Drupal\slugify\Service\SlugifyService
+    arguments: []
